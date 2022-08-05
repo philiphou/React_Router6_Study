@@ -17,7 +17,7 @@ export default function Message() {
           return (
             <li key={e.id}>
               {/* Link 也是传参的位置： */}
-              <Link to='detail' state={{id:e.id,title:e.title,content:e.content}}> {e.title}</Link>
+              <Link to={`detail?id=${e.id}&title=${e.title}&content=${e.content}`}> {e.title}</Link>
             </li>
           );
         })}
