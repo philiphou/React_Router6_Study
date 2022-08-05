@@ -1,4 +1,4 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink,Outlet } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -10,8 +10,7 @@ const Home = () => {
             <NavLink className="list-group-item" to="news">
               News
             </NavLink>
-          </li>
-          &nbsp;
+          </li>&nbsp;
           <li>
             <NavLink className="list-group-item" to="message">
               Messages
@@ -19,7 +18,7 @@ const Home = () => {
           </li>
         </ul>
         {/* 指定二级路由组件呈现位置 */}
-        <Outlet />
+        <Outlet/>
       </div>
     </div>
   );
