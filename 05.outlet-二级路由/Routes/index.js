@@ -10,7 +10,13 @@ const routesArr = [
     path: "/home",
     element: <Home />,
     children: [
-      { path: "message", element: <Message /> },
+      {
+        path: "message", element: <Message />,
+        children:[
+          {}
+        ]
+    
+    },
       { path: "news", element: <News /> },
     ],
   },
