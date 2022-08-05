@@ -4,9 +4,6 @@ import About from "./pages/About";
 import './app.css'
 
 export default function App() {
-  function addClassName({isActive}){
-    return isActive?"list-group-item atguigu":"list-group-item"
-  }
   return (
     <div id="rr6">
       <div className="row">
@@ -21,10 +18,10 @@ export default function App() {
         <div className="col-xs-offset-3 col-xs-8">
           <div className="list-group">
             {/* 路由链接 */}
-            <NavLink className={addClassName} to="/about">
+            <NavLink className="list-group-item" to="/about">
               About
             </NavLink>
-            <NavLink className={addClassName} to="/home">
+            <NavLink className="list-group-item" to="/home">
               Home
             </NavLink>
           </div>
