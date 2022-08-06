@@ -1,5 +1,6 @@
 import { NavLink,useRoutes} from "react-router-dom";
 import routesArr from "./Routes";
+import Header from "./pages/Header";
 
 import "./app.css";
 
@@ -7,14 +8,7 @@ export default function App() {
   const element = useRoutes(routesArr)
   return (
     <div id="rr6">
-      <div className="row">
-        <div className="col-xs-offset-2 col-xs-8">
-          <div className="page-header">
-            <h2>React Router 6 Demo</h2>
-            <hr />
-          </div>
-        </div>
-      </div>
+      <Header/>
       <div className="row">
         <div className="col-xs-offset-3 col-xs-8">
           <div className="list-group">
