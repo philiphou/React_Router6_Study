@@ -18,5 +18,8 @@
                 <Route path='xxx' element={<Demo/>}>
             <Route/>
         <Routes/>
+    8. console.log(useResolvePath('/user?id=001&name=philip')) // 输出一个对象，对象含有属性： {pathname:xxx, search:?id=001&name=philip, hash:xxx}
+    
+    
 
 
